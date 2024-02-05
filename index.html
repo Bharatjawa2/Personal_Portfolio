@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4c7c5c60ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Header">
+        <div class="container">
+            <nav>
+                <img src="Screenshot 2024-01-30 at 6.58.19 PM.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hi , I'm <span>Bharat</span><br> Jawa From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMG_8170.png" class="myphoto" alt="myphoto">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About me</h1>
+                    <p>Hey there! I'm Bharat, I am a passionate and ambitious second-year BTech student at Lovely Professional University, Punjab, currently mastering the art of full-stack development. With a strong foundation in both front-end and back-end technologies, I am dedicated to creating innovative and efficient solutions that seamlessly integrate user experience with robust functionality. Eager to contribute my skills and enthusiasm to the dynamic world of web development.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DSA</span><br>Data Structures and Algorithms</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Pursuing B.Tech from Lovely Professional University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-2026</span><br>B.Tech(CSE)</li>
+                            <li><span>2018-2020</span><br>High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Certainly! As a web developer, my primary focus is on creating and maintaining websites. I possess a strong understanding of various programming languages, frameworks, and technologies to build dynamic and interactive web applications. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        UI development focuses on visual elements and interactivity, while UX development emphasizes user research, information architecture, and usability testing to enhance overall user experience. Collaboration ensures a cohesive product</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web-App Development</h2>
+                    <p>Revolutionize app development with our expert services. We create innovative, user-friendly applications tailored to your needs. From concept to launch, we turn ideas into seamless digital experiences.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="iphone.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Connect, share, and engage with our cutting-edge social media app. Stay connected with friends, discover trending content, and express yourself through a dynamic and personalized digital social experience.
+                            Download it from App Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="LMS.jpeg">
+                    <div class="layer">
+                        <h3>Learning Management System</h3>
+                        <p>Empower your organization with our Learning Management System (LMS), providing a centralized platform for efficient training and education.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="e-commerce.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Shop effortlessly with our user-friendly online shopping app. Explore a vast selection, enjoy secure transactions, and experience the convenience of doorstep delivery for a seamless and delightful shopping journey.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>    
+    </div>
+<!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jawabharat05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8396010179</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Bharatjawa2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/Bharat_Jawa/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        <a href="https://www.linkedin.com/in/bharat-jawa-49537b24a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bharat_jawa_/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Bharat CV.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Bharat. Made with  <i class="fa-solid fa-heart"></i>   by GSR </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>const scriptURL = 'https://script.google.com/macros/s/AKfycbxMfm7WlkGXvuL53DPHgrvZ6rIGdxVZ_cJXbYplSBWiychPR821fHgqT_57SvXZQ6Y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })</script>
+</body>
+</html>
