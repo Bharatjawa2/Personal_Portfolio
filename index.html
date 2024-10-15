@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4c7c5c60ea.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/4c7c5c60ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="Header">
         <div class="container">
             <nav>
-                <img src="Screenshot 2024-01-30 at 6.58.19 PM.png" alt="Logo" class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                
                 <ul id="sidemenu">
                     <li><a href="#Header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+            
             <div class="header-text">
                 <p>Software developer</p>
                 <h1>Hi , I'm <span>Bharat</span><br> Jawa From India</h1>
@@ -32,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="IMG_8170.png" class="myphoto" alt="myphoto">
+                    <img src="images/IMG_8170.png" class="myphoto" alt="myphoto">
                 </div>
                 <div class="about-col-2">
                     <h1 class="Sub-title">About me</h1>
@@ -43,11 +45,26 @@
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-container">
                         <ul>
                             <li><span>DSA</span><br>Data Structures and Algorithms</li>
                             <li><span>Web development</span><br>Web app development</li>
-                            <li><span>App development</span><br>Building Android/ios apps</li>
+                            <li><span>App development</span><br>Building Android apps</li>
+                            <li><span>Technical-Languages</span><br>
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 html-icon" title="HTML"></i>
+                                    <i class="fab fa-css3-alt css-icon" title="CSS"></i>
+                                    <i class="fab fa-js js-icon" title="JavaScript"></i>
+                                    <i class="fab fa-react react-icon" title="React"></i>
+                                    <i class="fab fa-node-js node-icon" title="Node.js"></i>
+                                    <i class="fas fa-database mongodb-icon" title="MongoDB"></i>
+                                    <i class="fas fa-server express-icon" title="Express.js"></i>
+                                    <i class="fab fa-php php-icon" title="PHP"></i> 
+                                </div>
+                            </li>
                         </ul>
+                        
+                        </div>
                     </div>
                     <div class="tab-contents" id="Experience">
                         <ul>
@@ -74,20 +91,22 @@
                     <h2>Web Development</h2>
                     <p>
                         Certainly! As a web developer, my primary focus is on creating and maintaining websites. I possess a strong understanding of various programming languages, frameworks, and technologies to build dynamic and interactive web applications. </p>
-                    <a href="#">Learn More</a>
+                    <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Learn More</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
                     <p>
-                        UI development focuses on visual elements and interactivity, while UX development emphasizes user research, information architecture, and usability testing to enhance overall user experience. Collaboration ensures a cohesive product</p>
-                    <a href="#">Learn More</a>
+                        Building scalable and secure applications using cloud infrastructure like AWS, Azure, or Google Cloud. I focus on creating flexible, cloud-based solutions that streamline business operations.Doing Cloud Computing course on NPTEL currently.
+                    </p>
+                    <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing#:~:text=Simply%20put%2C%20cloud%20computing%20is,resources%2C%20and%20economies%20of%20scale.">Learn More</a>
                 </div>
+                
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Web-App Development</h2>
-                    <p>Revolutionize app development with our expert services. We create innovative, user-friendly applications tailored to your needs. From concept to launch, we turn ideas into seamless digital experiences.</p>
-                    <a href="#">Learn More</a>
+                    <h2>Mobile App Development</h2>
+                    <p> I specialize in building high-performance, feature-rich mobile applications for Android and iOS platforms using the latest technologies, ensuring a seamless user experience across devices.</p>
+                    <a href="https://www.geeksforgeeks.org/android-app-development-fundamentals-for-beginners/" target="_blank">Learn More</a>
                 </div>
             </div>
         </div>
@@ -98,40 +117,63 @@
     <!--------------Portfolio---------------->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title" >My Work  <i class="fa-solid fa-arrow-right arrow-icon"></i></h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="iphone.png">
+                    <img src="images/tiktak.png" alt="Event Management Website">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Connect, share, and engage with our cutting-edge social media app. Stay connected with friends, discover trending content, and express yourself through a dynamic and personalized digital social experience.
-                            Download it from App Store.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                        <h3>Tik Tak Toe Game</h3>
+                        <p>Using MinMax Algorithm I have made a this game.</p>
+                        <a href="https://coruscating-sawine-ded9d2.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="LMS.jpeg">
+                    <img src="images/doc.webp" alt="Doctor">
                     <div class="layer">
-                        <h3>Learning Management System</h3>
-                        <p>Empower your organization with our Learning Management System (LMS), providing a centralized platform for efficient training and education.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                        <h3>Doctor Appointment Website</h3>
+                        <p>A doctor appointment website is an online platform that allows patients to easily schedule, manage, and track their appointments with healthcare providers, enhancing accessibility and efficiency in accessing medical services.</p>
+                        <a href="#" onclick="alert('Currently working on it.')"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="e-commerce.png">
+                    <img src="images/loginn.png" alt="Login-SignUp Authentication">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Shop effortlessly with our user-friendly online shopping app. Explore a vast selection, enjoy secure transactions, and experience the convenience of doorstep delivery for a seamless and delightful shopping journey.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                        <h3>Login-SignUp Authentication</h3>
+                        <p>Our Login-SignUp Authentication system uses JWT to securely manage user authentication. It ensures a seamless and safe login and signup process.</p>
+                        <a href="https://bespoke-belekoy-dd130b.netlify.app" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Ecommerce.jpg" alt="E-Commerce Website">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Experience a modern e-commerce website built with ReactJS. It offers real-time updates, responsive design, and a smooth user experience.</p>
+                        <a href="#" onclick="alert('Currently working on it.')"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/event-management-guide.jpg" alt="Event Management Website">
+                    <div class="layer">
+                        <h3>Event Management Website</h3>
+                        <p>Our event management system streamlines event planning with real-time updates, registration management, and collaboration tools.</p>
+                        <a href="https://github.com/Bharatjawa2/SparkSpectra" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/iphone.png" alt="Mobile App">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>Connect, share, and engage with our innovative mobile app. Built using Android Studio with Java and Kotlin for seamless performance and functionality.</p>
+                        <a href="#" onclick="alert('Currently working on it.')"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
-        </div>    
+            <a href="https://github.com/Bharatjawa2" class="btn" target="_blank">See more</a>
+        </div>
     </div>
+    
+    
+    
 <!-- contact -->
     <div id="contact">
         <div class="container">
@@ -146,32 +188,20 @@
                         <a href="https://www.linkedin.com/in/bharat-jawa-49537b24a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/bharat_jawa_/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
-                    <a href="Bharat CV.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                    <a href="12216193_BharatJawa_CV.pdf" download class="btn btn2" target="_blank">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form method="post" name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>copyright © Bharat. Made with  <i class="fa-solid fa-heart"></i>   by GSR </p>
-        </div>
     </div>
 
     <script src="script.js"></script>
-    <script>const scriptURL = 'https://script.google.com/macros/s/AKfycbxMfm7WlkGXvuL53DPHgrvZ6rIGdxVZ_cJXbYplSBWiychPR821fHgqT_57SvXZQ6Y/exec'
-        const form = document.forms['submit-to-google-sheet']
-        
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => console.log('Success!', response))
-              .catch(error => console.error('Error!', error.message))
-          })</script>
 </body>
 </html>
